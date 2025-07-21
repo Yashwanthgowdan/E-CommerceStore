@@ -7,10 +7,4 @@
     "frontend",
     "backend/product-service"
   ],
-  "scripts": {
-    "start:all": "concurrently \"npm run dev -w backend/user-service\" \"npm run dev -w backend/cart-service\" \"npm run dev -w backend/order-service\" \"npm run dev -w backend/product-service\" \"npm run dev -w frontend\""
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.0"
-  }
 }
