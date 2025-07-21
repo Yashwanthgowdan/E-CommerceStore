@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: frontend
 spec:
-  type: NodePort # Use LoadBalancer in Cloud
+  type: LoadBalancer
   selector:
     app: frontend
   ports:
