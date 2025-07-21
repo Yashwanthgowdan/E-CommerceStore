@@ -10,21 +10,29 @@ services:
     build: ./backend/user-service
     ports:
       - "3001:3001"
+    depends_on:
+      - mongodb
 
   cart-service:
     build: ./backend/cart-service
     ports:
       - "3003:3003"
+    depends_on:
+      - mongodb
 
   order-service:
     build: ./backend/order-service
     ports:
       - "3004:3004"
+    depends_on:
+      - mongodb
 
   product-service:
     build: ./backend/product-service
     ports:
       - "3002:3002"
+    depends_on:
+      - mongodb
 
   frontend:
     build: ./frontend
