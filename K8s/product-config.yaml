@@ -1,4 +1,4 @@
-appversion: v1
+apiversion: v1
 kind: ConfigMap
 metadata:
   name: product-service-config
