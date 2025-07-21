@@ -19,4 +19,4 @@ spec:
             - containerPort: 3004
           envFrom:
             - configMapRef:
-                name: order-config
+                name: order-service-config
