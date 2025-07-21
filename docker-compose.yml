@@ -1,6 +1,11 @@
 version: '3.8'
 
 services:
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+      
   user-service:
     build: ./backend/user-service
     ports:
@@ -25,8 +30,3 @@ services:
     build: ./frontend
     ports:
       - "3000:80"
-
-  mongodb:
-    image: mongo
-    ports:
-      - "27017:27017"
