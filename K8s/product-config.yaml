@@ -4,4 +4,4 @@ metadata:
   name: product-service-config
 data:
   PORT: "3002"
-  MONGODB_URI: "mongodb://mongo:27017/ecommerce_product"
+  MONGODB_URI: "mongodb://mongo:27017/ecommerce_products"
