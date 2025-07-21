@@ -1,0 +1,8 @@
+appVersion: v1
+kind: Configmap
+metadata:
+  name: cart-services-config
+data:
+  PORT: "3003"
+  MONGODB_URI: "mongodb://mongo:27017/ecommerce_cart"
+  PRODUCT_SERVICE_URL: "http://product-service:3002"
