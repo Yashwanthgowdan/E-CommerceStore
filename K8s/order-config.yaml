@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Configmap
+metadata:
+  name: order-service-config
+data:
+  PORT: "3004"
+  MONGODB_URI: "mongodb://mongo:27017/ecommerce_orders"
+  CART_SERVICE_URL: "http://cart-service:3003"
+  PRODUCT_SERVICE_URL: "http://product-service:3002"
+  USER_SERVICE_URL: "http://user-service:3001"
