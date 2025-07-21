@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: user-service-config
+data:
+  PORT: "3001"
+  MONGODB_URI: "mongodb://mongo:27017/ecommerce_users"
+  JWT_SECRET: "your-jwt-secret-key"
