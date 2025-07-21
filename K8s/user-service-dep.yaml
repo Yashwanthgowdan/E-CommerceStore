@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: <your-dockerhub-username>/user-service
+          image: yashwanthgowdan/user-service
           ports:
             - containerPort: 3001
           envFrom:
