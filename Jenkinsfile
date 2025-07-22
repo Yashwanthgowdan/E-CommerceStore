@@ -5,7 +5,7 @@ pipeline {
     DOCKERHUB_USER = credentials('Yashwanthgowdan')     
     DOCKERHUB_PASS = credentials('************')     
     AWS_REGION = 'ap-northeast-3'
-    EKS_CLUSTER_NAME = 'node-deployment'
+    EKS_CLUSTER_NAME = 'eksctl-yash-e-commerce-cluster/VPC'
   }
 
   stages {
