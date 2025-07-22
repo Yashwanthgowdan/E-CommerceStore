@@ -29,8 +29,8 @@ pipeline {
           services.each { service ->
             dir("backend/${service}") {
               sh """
-                docker build -t ${DOCKERHUB_USER}/${service}:latest .
                 echo "${DOCKERHUB_PASS}" | docker login -u "${DOCKERHUB_USER}" --password-stdin
+                docker build -t ${DOCKERHUB_USER}/${service}:latest .
                 docker push ${DOCKERHUB_USER}/${service}:latest
               """
             }
@@ -38,8 +38,8 @@ pipeline {
 
           dir("frontend") {
             sh """
-              docker build -t ${DOCKERHUB_USER}/frontend:latest .
               echo "${DOCKERHUB_PASS}" | docker login -u "${DOCKERHUB_USER}" --password-stdin
+              docker build -t ${DOCKERHUB_USER}/frontend:latest .
               docker push ${DOCKERHUB_USER}/frontend:latest
             """
           }
