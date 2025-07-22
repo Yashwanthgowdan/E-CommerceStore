@@ -35,9 +35,9 @@ cd E-CommerceStore
 
 🧪Step B: Run backend services and frontend Locally
 eg: Backend Services: cd backend/user-service
-    npm install
-    npm start
-    
+npm install
+npm start
+
 Repeat for: product-service, cart-service, order-service and Frontend
 
 🐳Step C: Dockerize the App
