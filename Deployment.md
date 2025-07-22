@@ -9,7 +9,9 @@ E-CommerceStore/
 │   ├── cart-service/
 │   └── order-service/
 ├── frontend/
-└── k8s/
+├── k8s/
+└── docker-compose.yml
+
 
 ##📌 Overview
 This guide walks you through:
@@ -47,6 +49,7 @@ Repeat for: product-service, cart-service, order-service and Frontend
 docker build -t yourdockerhub/user-service:latest backend/user-service
 docker push yourdockerhub/user-service:latest
 Repeat for other services + frontend.
+Create a docker-compose.yml to run all-containers with one command.(when ever needed)
 <img width="1365" height="672" alt="Screenshot 2025-07-22 003539" src="https://github.com/user-attachments/assets/f7511ccf-22c7-4ba6-97a1-b5813e1131fd" />
 
 
